@@ -126,14 +126,17 @@ Use Case Diagrams are visual representations of how users interact with a system
 ![Use Case Diagram for Hotel Booking System](alx-booking-uc.png)
 
 **Actors**:
-- Guest
+- Customer
 - Admin
 - Hotel Manager
+- System User
 
 **Use Cases**:
-- Register, Login, Search Hotel, Make Booking, Cancel Booking, Write Review (Guest)
-- Manage Users, Generate Reports (Admin)
-- Manage Hotel Details, Confirm Booking, View Reviews (Hotel Manager)
+All Actors should be able to Login and Logout, Update Profile, and Manage Password.
+- **Customer**: Register, Login, Search Hotel, Make Booking, Cancel Booking, Make Payment, Write Review
+- **Admin**: Manage Users, Manage Hotel, Manage Rooms, Manage Services, Manage Payments, Generate Reports
+- **Hotel Manager**: Manage Hotel Details, Confirm Booking, Allot Rooms, Collect Payments,  View Reviews
+- **System User**: Manage Rooms, Manage Services, Manage Payments, 
 
 ---
 
