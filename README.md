@@ -50,19 +50,31 @@ Capturing detailed user needs early helps ensure the final product aligns with s
 Requirement Analysis involves several structured activities that ensure all stakeholder needs are thoroughly understood, documented, and validated. The five key activities are:
 
 - **Requirement Gathering**
-  - Interviews, surveys, workshops, and observations.
+  - Conduct interviews with stakeholders to understand their needs.
+  - Distribute surveys and questionnaires for broader feedback.
+  - Organize workshops to collaborate and discuss requirements.
+  - Observe users in their working environment.
+  - Review existing systems and documentation for insights.
 
 - **Requirement Elicitation**
-  - Brainstorming, focus groups, and prototyping.
+  - Use brainstorming sessions to generate requirement ideas.
+  - Conduct focus groups for detailed stakeholder input.
+  - Develop prototypes to visualize and refine potential solutions.
 
 - **Requirement Documentation**
-  - Specification documents, user stories, and use cases.
+  - Create a comprehensive Requirement Specification Document.
+  - Write user stories that describe features from the user's perspective.
+  - Develop use case diagrams to map user interactions with the system.
 
 - **Requirement Analysis and Modeling**
-  - Prioritization, feasibility analysis, and diagram modeling.
+  - Prioritize requirements based on business value and feasibility.
+  - Conduct feasibility studies considering technical, financial, and time constraints.
+  - Build models such as data flow diagrams or entity-relationship diagrams to illustrate system behavior and structure.
 
 - **Requirement Validation**
-  - Review, acceptance criteria, and traceability.
+  - Review documented requirements with stakeholders for accuracy.
+  - Define acceptance criteria for each requirement to ensure completeness.
+  - Establish traceability to confirm all requirements are addressed during development and testing.
 
 ---
 
@@ -74,25 +86,28 @@ In software development, requirements are broadly categorized into two types: **
 
 Functional requirements define specific behaviors and features the system must support.
 
-**Examples for a Booking System:**
-- User Registration and Authentication
-- Search Hotel
-- Make Booking
-- Cancel Booking
-- Payment Processing
-- Write Review
+**Examples for a Hotel Booking Management System:**
+
+- **User Registration and Authentication:** Users should be able to create an account and log in securely.
+- **Search Functionality:** Users can search for hotels based on location, dates, and preferences.
+- **Room Booking:** Users can select available rooms and make bookings.
+- **Payment Processing:** The system should handle payments through various methods (e.g., credit card, PayPal).
+- **Booking Management:** Users can view, modify, or cancel their bookings.
+- **Review System:** Users can leave reviews and ratings for hotels they have stayed in.
+
 
 ### Non-functional Requirements
 
-Non-functional requirements specify how the system performs.
+Non-functional requirements specify the criteria that judge the operation of a system, rather than specific behaviors. They define how the system performs a function.
 
-**Examples:**
-- Performance: Search results load in under 2 seconds.
-- Scalability: Support for 10,000 concurrent users.
-- Security: Encrypted data and compliance with privacy laws.
-- Availability: 99.9% system uptime.
-- Usability: Intuitive interface.
-- Maintainability: Modular and easy to update.
+**Examples for a Hotel Booking Management System:**
+
+- **Performance:** The system should load search results within 2 seconds.
+- **Scalability:** The application must support up to 10,000 concurrent users without performance degradation.
+- **Security:** User data must be encrypted, and the system should comply with data protection regulations.
+- **Availability:** The system should have an uptime of 99.9% to ensure constant availability.
+- **Usability:** The user interface should be intuitive and accessible to users with varying levels of technical expertise.
+- **Maintainability:** The system architecture should allow for easy updates and maintenance without significant downtime.
 
 ---
 
@@ -100,10 +115,11 @@ Non-functional requirements specify how the system performs.
 
 Use Case Diagrams are visual representations of how users interact with a system. They help define system scope and improve stakeholder communication.
 
-### Benefits:
-- Clarify system functionality
-- Improve requirement validation
-- Support test case development
+### Benefits of Use Case Diagrams:
+- Clarify system scope and interactions
+- Improve communication between stakeholders
+- Provide a high-level overview of system functionality
+- Serve as a foundation for creating test cases
 
 ### Hotel Booking System Use Case Diagram:
 
@@ -123,19 +139,24 @@ Use Case Diagrams are visual representations of how users interact with a system
 
 ## Acceptance Criteria
 
-Acceptance Criteria are conditions a feature must meet to be accepted.
+Acceptance Criteria are the conditions that a software product must satisfy to be accepted by a user, customer, or other stakeholders. They serve as a formal agreement on what a feature should do and provide a clear basis for functional testing.
 
-### Importance:
-- Clarifies feature expectations
-- Guides development and testing
-- Defines “done” in Agile environments
+### Importance of Acceptance Criteria:
+- **Clarifies Expectations**: Ensures that both developers and stakeholders understand the scope and behavior of a feature.
+- **Guides Development**: Helps developers stay aligned with functional requirements and business goals.
+- **Enables Test Planning**: Serves as a reference for writing test cases and verifying functionality.
+- **Supports Agile Processes**: Commonly used in Agile environments to define the "Definition of Done" for user stories.
 
-### Example: Checkout Feature
+### Example: Checkout Feature in a Booking Management System
+
+**Feature**: Checkout
 
 **Acceptance Criteria**:
-1. User can review booking summary before payment.
-2. Payment options include credit card and PayPal.
-3. Confirmation appears after successful payment.
-4. Confirmation email is sent to the user.
-5. Booking is stored in user history.
-6. Errors are shown for failed transactions with retry option.
+1. Users must be able to review their booking summary before finalizing payment.
+2. Users must be able to enter and validate their payment information (credit card, PayPal, etc.).
+3. The system must display a confirmation message upon successful payment.
+4. A booking confirmation email must be sent to the user's registered email address.
+5. The system must store the booking information in the user's account history.
+6. If payment fails, the system should notify the user with an appropriate error message and allow retry.
+
+
